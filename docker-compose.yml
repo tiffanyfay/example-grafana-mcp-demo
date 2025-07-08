@@ -5,7 +5,7 @@ services:
       - "3000:3000"
     volumes:
       - ./app:/usr/src/app
-    command: npm run dev
+    command: npm install && npm run dev
     networks:
       - demo-net
 
